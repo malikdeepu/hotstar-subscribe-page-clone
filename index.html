@@ -83,6 +83,7 @@
                 class="flex flex-col rounded-t-lg ... gap-5 text-[#e0e5ee] text-[20px] border-none bg-[#1f222b] px-10 py-2 pb-5 h-[55vh]"
               >
                 <div id="mob1" class="text-[#ffcc75] text-center">Mobile</div>
+                
                 <div id="mob2" class="text-center">
                   <i class="fa-solid fa-check"></i>
                 </div>
@@ -99,26 +100,27 @@
                 </div>
                 <div id="mob7" class="text-center">stereo</div>
               </div>
+            
               <div
                 id="super"
-                class="flex flex-col bg-transparent rounded-t-lg ... gap-5  text-[20px] border-none px-10 py-2 pb-5 h-[55vh]"
+                class="flex flex-col bg-transparent text-[#bfdeef] rounded-t-lg ... gap-5  text-[20px] border-none px-10 py-2 pb-5 h-[55vh]"
               >
                 <div id="sup1" class="text-center text-[#bfdeef]">Super</div>
-                <div id="sup2" class="text-center text-[#bfdeef]">
+                <div id="sup2" class="text-center ">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <div id="sup3" class="text-center text-[#bfdeef]">
+                <div id="sup3" class="text-center">
                   <i class="fa-solid fa-check"></i>
                 </div>
-                <div id="sup4" class="text-center text-[#bfdeef]">
+                <div id="sup4" class="text-center ">
                   <i class="fa-solid fa-xmark"></i>
                 </div>
-                <div id="sup5" class="text-center text-[#bfdeef]">2</div>
-                <div id="sup6" class="text-center text-[#bfdeef]">
+                <div id="sup5" class="text-center ">2</div>
+                <div id="sup6" class="text-center ">
                   HD <br />
                   1080p
                 </div>
-                <div id="sup7" class="text-center text-[#bfdeef]">stereo</div>
+                <div id="sup7" class="text-center ">stereo</div>
               </div>
               <div
                 id="premium"
@@ -147,7 +149,7 @@
               class="flex flex-row bg-[#252833] gap-5 rounded-full text-[24px] w-[52vh] p-[5px] pl-[20px] pr-[20px] mt-[30px] relative right-[25%] "
             >
               <div id="plan-1" class="flex flex-row gap-[5px]">
-                <div id="pl-1" class="text-[#e1e6f0]">Quarterly</div>
+                <div id="pl-1"  onclick="myquarterly()" class="text-[#e1e6f0]">Quarterly</div>
                 <div
                   id="checkbox-1"
                   class="bg-[#0840bc] block h-6 w-6 mt-2 rounded-full  item-center"
@@ -158,7 +160,7 @@
                 </div>
               </div>
               <div id="plan-2" class="flex flex-row gap-[3px]">
-                <div id="pl-2" class="text-[#707a94]">Yearly</div>
+                <div id="pl-2" class="text-[#707a94]"  onclick="myyearly()">Yearly</div>
                 <div
                   id="checkbox-2"
                   class="bg-[#0840bc] hidden h-6 w-6 mt-2 rounded-full  item-center"
@@ -169,7 +171,7 @@
                 </div>
               </div>
               <div id="plan-3" class="flex flex-row gap-[3px]">
-                <div id="pl-3" class="text-[#707a94]">Monthly</div>
+                <div id="pl-3" class="text-[#707a94]"  onclick="mymonthly()">Monthly</div>
                 <br />
                 <div
                   id="checkbox-3"
@@ -184,30 +186,56 @@
           </div>
         </div>
         <div id="bottam">
-      <div class="flex justify-end gap-10 mt-10 pr-[80px] relative top-[-30%]">
-        <div  id="mo"  onclick="mymobile()" class="outline outline-[white] pr-[7rem] pl-3 py-2 rounded-lg">
+      <div class="flex justify-end gap-10 mt-10 pr-[40px] relative top-[-30%]">
+        <div  id="mo"  onclick="mymobile()" class="outline outline-[white] pr-[7rem] pl-3 py-2 rounded-lg relative w-[250px]">
           <div id="mo-1" class="text-[#fec97c] text-2xl">Mobile</div>
           <div class="flex items-center">
-            <div class="text-gray-200 text-2xl">149</div> 
-            <div class="text-gray-200">/3Months</div>
+            <div id="rate-1" class="text-gray-200 text-2xl">149</div> 
+            <div  id="month-1" class="text-gray-200">/3Months</div> 
+            <div
+            id="checkbox-4"
+            class="bg-[#0840bc] block h-8 w-8  rounded-full  item-center  absolute left-[91%] bottom-[77%]"
+          >
+            <i
+              class="fa-solid fa-check text-white bg-transparent text-[20px] relative top-[5px] left-[15%]"
+            ></i>
+          </div>
           </div>
         </div>
-        <div  id="su"  onclick="mysuper()"class="outline outline-[#4b5563] pr-[7rem] pl-3 py-2 rounded-lg">
+        <div  id="su"  onclick="mysuper()"class="outline outline-[#4b5563] relative pr-[7rem] pl-3 py-2 rounded-lg w-[250px]">
           <div   id="su-1"class="text-gray-200 text-2xl" >Super</div>
           <div class="flex items-center">
-            <div class="text-gray-200 text-2xl">299</div>
-            <div class="text-gray-200">/3Months</div>
+            <div   id="rate-2"class="text-gray-200 text-2xl">299</div>
+            <div id="month-2" class="text-gray-200">/3Months</div>
+            
+            
+            <div
+            id="checkbox-5"
+            class="bg-[#0840bc] hidden h-8 w-8  absolute rounded-full  item-center   left-[91%] bottom-[77%]"
+          >
+            <i
+              class="fa-solid fa-check text-white bg-transparent text-[20px] relative top-[5px] left-[15%]"
+            ></i>
+          </div>
           </div>
         </div>
-        <div id="pr"  onclick="mypremium()" class="outline outline-[#4b5563] pr-[7rem] pl-3 py-2 rounded-lg">
+        <div id="pr"  onclick="mypremium()" class="outline  outline-[#4b5563] relative pr-[7rem] pl-3 py-2 rounded-lg w-[250px]">
           <div id="pr-1" class="text-gray-200 text-2xl" >Premium</div>
           <div class="flex items-center">
-            <div class="text-gray-200 text-2xl">499</div>
-            <div class="text-gray-200">/3Months</div>
+            <div id="rate-3"class="text-gray-200 text-2xl">499</div>
+            <div   id="month-3" class="text-gray-200">/3Months</div>
+            <div
+            id="checkbox-6"
+            class="bg-[#0840bc] hidden h-8 w-8  rounded-full  item-center  absolute left-[91%] bottom-[77%]"
+          >
+            <i
+              class="fa-solid fa-check text-white bg-transparent text-[20px] relative top-[5px] left-[15%]"
+            ></i>
+          </div>
           </div>
         </div>
       </div>
-      <div id="continue-button" class=" bg-[#0851d7] mt-[-15px] text-white text-[20px] rounded-lg text-center py-3 w-[112vh] ml-[55px] ">Contnue with Mobile <i class="fa-solid fa-chevron-right"></i> </div>
+      <div id="continue-button" class=" bg-[#0851d7] mt-[-15px] text-white text-[20px] rounded-lg text-center py-3  w-[112vh] ml-[55px] ">Contnue with Mobile <i class="fa-solid fa-chevron-right"></i> </div>
         </div>
         </div>
         
