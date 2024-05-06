@@ -1,0 +1,57 @@
+function mymobile() {
+  document.getElementById("mobile").style.backgroundColor = "#1f222b";
+  document.getElementById("mob1").style.color = "#ffcc75";
+  document.getElementById("super").style.backgroundColor = "#0f1014";
+  document.getElementById("sup1").style.color = "#bfdeef";
+  document.getElementById("premium").style.backgroundColor = "#0f1014";
+  document.getElementById("pre1").style.color = "#bfdeef";
+  document.getElementById("checkbox-1").style.display = "block";
+  document.getElementById("checkbox-1").style.marginTop = "8px";
+  document.getElementById("checkbox-2").style.display = "none";
+  document.getElementById("checkbox-3").style.display = "none";
+  document.getElementById("mo").style.borderColor = "white";
+  document.getElementById("mo-1").style.color = "#fec97c";
+  document.getElementById("su").style.borderColor = "#4b5563";
+  document.getElementById("su-1").style.color = "white";
+  document.getElementById("pr").style.borderColor = "#4b5563";
+  document.getElementById("pr-1").style.color = "white";
+}
+
+function mysuper() {
+  document.getElementById("mobile").style.backgroundColor = "#0f1014";
+  document.getElementById("mob1").style.color = "#bfdeef";
+  document.getElementById("super").style.backgroundColor = "#1f222b";
+  document.getElementById("sup1").style.color = "#ffcc75";
+  document.getElementById("premium").style.backgroundColor = "#0f1014";
+  document.getElementById("pre1").style.color = "#bfdeef";
+  document.getElementById("checkbox-1").style.display = "none";
+  document.getElementById("checkbox-2").style.display = "block";
+  document.getElementById("checkbox-2").style.display = "block";
+  document.getElementById("checkbox-2").style.marginTop = "8px";
+  document.getElementById("checkbox-3").style.display = "none";
+  document.getElementById("mo").style.borderColor = "#4b5563";
+  document.getElementById("mo-1").style.color = "white";
+  document.getElementById("su").style.borderColor = "white";
+  document.getElementById("su-1").style.color = "#fec97c";
+  document.getElementById("pr").style.borderColor = "#4b5563";
+  document.getElementById("pr-1").style.color = "white";
+}
+function mypremium() {
+  document.getElementById("mobile").style.backgroundColor = "#0f1014";
+  document.getElementById("mob1").style.color = "bfdeef";
+  document.getElementById("super").style.backgroundColor = "#0f1014";
+  document.getElementById("sup1").style.color = "#bfdeef";
+  document.getElementById("premium").style.backgroundColor = "#1f222b";
+  document.getElementById("pre1").style.color = "#ffcc75";
+  document.getElementById("checkbox-1").style.display = "none";
+  document.getElementById("checkbox-2").style.display = "none";
+  document.getElementById("checkbox-3").style.display = "block";
+  document.getElementById("checkbox-3").style.display = "block";
+  document.getElementById("checkbox-3").style.marginTop = "8px";
+  document.getElementById("mo").style.borderColor = "#4b5563";
+  document.getElementById("mo-1").style.color = "#white";
+  document.getElementById("su").style.borderColor = "#4b5563";
+  document.getElementById("su-1").style.color = "white";
+  document.getElementById("pr").style.borderColor = "white";
+  document.getElementById("pr-1").style.color = "#fec97c";
+}
